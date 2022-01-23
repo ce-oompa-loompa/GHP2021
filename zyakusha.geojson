@@ -3,6 +3,8 @@
 "name": "zyakusha",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "住所": "テスト", "状況": "不明", "避難サポート希望": "必要", "経度": 139.924005, "緯度": 35.691322 }, "geometry": { "type": "Point", "coordinates": [ 139.924005, 35.691322 ] } }
+{ "type": "Feature", "properties": { "住所": "テスト", "状況": "不明", "避難サポート希望": "必要", "経度": 139.924005, "緯度": 35.691322 }, "geometry": { "type": "Point", "coordinates": [ 139.924005, 35.691322 ] } },
+{ "type": "Feature", "properties": { "住所": "test2", "状況": "不明", "避難サポート希望": null, "経度": null, "緯度": null }, "geometry": { "type": "Point", "coordinates": [ 139.922898533370642, 35.696336493662507 ] } },
+{ "type": "Feature", "properties": { "住所": "test3", "状況": null, "避難サポート希望": null, "経度": null, "緯度": null }, "geometry": { "type": "Point", "coordinates": [ 139.922494034159826, 35.69433559129525 ] } }
 ]
 }
