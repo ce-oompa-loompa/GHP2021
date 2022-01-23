@@ -20,6 +20,15 @@ var paleLayer = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{
     attribution: '地理院地図',
     maxZoom: 18,
 }).addTo(map);
+    fetch("./siteihinanzyo.geojson")
+  .then(response => response.json())
+  .then(data => {
+    var hinanjo = L.geoJSON(data, {
+        pointToLayer: function(geojsonPoint, latlng) {
+            return L.divIcon({html: "<img src='./hinanjo.png' />"})
+        }
+    })
+  })
 </script>
 </body>
 </html>
